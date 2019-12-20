@@ -1,0 +1,25 @@
+server:
+  port: 8081  #tomcat 启动端口号
+
+#服务注册中心配置
+eureka:
+
+  client:
+    serviceUrl:
+      #这个地址填的是注册中心eureka-server的地址
+      defaultZone: http://localhost:8080/eureka/
+    healthcheck:
+      enabled: true
+spring:
+  application:
+    name: provider
+  datasource:
+    username: student
+    password: 123456
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+      connection-timeout: 6000
+      maximum-pool-size: 5
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml

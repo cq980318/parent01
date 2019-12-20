@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaregistry" />
+        <module name="service" />
+        <module name="service2" />
+        <module name="web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dao" target="1.8" />
+      <module name="eurekaregistry" target="1.8" />
+      <module name="parent01" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="service2" target="1.8" />
+      <module name="web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dao" options="" />
+      <module name="eurekaregistry" options="" />
+      <module name="parent01" options="" />
+      <module name="service" options="" />
+      <module name="service2" options="" />
+      <module name="web" options="" />
+    </option>
+  </component>
+</project>
